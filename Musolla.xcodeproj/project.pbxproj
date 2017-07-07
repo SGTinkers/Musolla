@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA5741A31F0F74C600556A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A21F0F74C600556A5C /* AppDelegate.swift */; };
+		AA5741A51F0F74C600556A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A41F0F74C600556A5C /* ViewController.swift */; };
+		AA5741A81F0F74C600556A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5741A61F0F74C600556A5C /* Main.storyboard */; };
+		AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A91F0F74C600556A5C /* Musolla.xcdatamodeld */; };
+		AA5741AD1F0F74C600556A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5741AC1F0F74C600556A5C /* Assets.xcassets */; };
+		AA5741B01F0F74C600556A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */; };
+		AA5741BB1F0F74C700556A5C /* MusollaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741BA1F0F74C700556A5C /* MusollaTests.swift */; };
+		AA5741C61F0F74C700556A5C /* MusollaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741C51F0F74C700556A5C /* MusollaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5741B71F0F74C700556A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5741971F0F74C600556A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA57419E1F0F74C600556A5C;
+			remoteInfo = Musolla;
+		};
+		AA5741C21F0F74C700556A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5741971F0F74C600556A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA57419E1F0F74C600556A5C;
+			remoteInfo = Musolla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA57419F1F0F74C600556A5C /* Musolla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musolla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5741A21F0F74C600556A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5741A41F0F74C600556A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5741A71F0F74C600556A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA5741AA1F0F74C600556A5C /* Musolla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Musolla.xcdatamodel; sourceTree = "<group>"; };
+		AA5741AC1F0F74C600556A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5741AF1F0F74C600556A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5741B11F0F74C700556A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5741B61F0F74C700556A5C /* MusollaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusollaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5741BA1F0F74C700556A5C /* MusollaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusollaTests.swift; sourceTree = "<group>"; };
+		AA5741BC1F0F74C700556A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5741C11F0F74C700556A5C /* MusollaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusollaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5741C51F0F74C700556A5C /* MusollaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusollaUITests.swift; sourceTree = "<group>"; };
+		AA5741C71F0F74C700556A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA57419C1F0F74C600556A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741B31F0F74C700556A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741BE1F0F74C700556A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5741961F0F74C600556A5C = {
+			isa = PBXGroup;
+			children = (
+				AA5741A11F0F74C600556A5C /* Musolla */,
+				AA5741B91F0F74C700556A5C /* MusollaTests */,
+				AA5741C41F0F74C700556A5C /* MusollaUITests */,
+				AA5741A01F0F74C600556A5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5741A01F0F74C600556A5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA57419F1F0F74C600556A5C /* Musolla.app */,
+				AA5741B61F0F74C700556A5C /* MusollaTests.xctest */,
+				AA5741C11F0F74C700556A5C /* MusollaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5741A11F0F74C600556A5C /* Musolla */ = {
+			isa = PBXGroup;
+			children = (
+				AA5741A21F0F74C600556A5C /* AppDelegate.swift */,
+				AA5741A41F0F74C600556A5C /* ViewController.swift */,
+				AA5741A61F0F74C600556A5C /* Main.storyboard */,
+				AA5741AC1F0F74C600556A5C /* Assets.xcassets */,
+				AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */,
+				AA5741B11F0F74C700556A5C /* Info.plist */,
+				AA5741A91F0F74C600556A5C /* Musolla.xcdatamodeld */,
+			);
+			path = Musolla;
+			sourceTree = "<group>";
+		};
+		AA5741B91F0F74C700556A5C /* MusollaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5741BA1F0F74C700556A5C /* MusollaTests.swift */,
+				AA5741BC1F0F74C700556A5C /* Info.plist */,
+			);
+			path = MusollaTests;
+			sourceTree = "<group>";
+		};
+		AA5741C41F0F74C700556A5C /* MusollaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5741C51F0F74C700556A5C /* MusollaUITests.swift */,
+				AA5741C71F0F74C700556A5C /* Info.plist */,
+			);
+			path = MusollaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA57419E1F0F74C600556A5C /* Musolla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5741CA1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "Musolla" */;
+			buildPhases = (
+				AA57419B1F0F74C600556A5C /* Sources */,
+				AA57419C1F0F74C600556A5C /* Frameworks */,
+				AA57419D1F0F74C600556A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musolla;
+			productName = Musolla;
+			productReference = AA57419F1F0F74C600556A5C /* Musolla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5741B51F0F74C700556A5C /* MusollaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5741CD1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaTests" */;
+			buildPhases = (
+				AA5741B21F0F74C700556A5C /* Sources */,
+				AA5741B31F0F74C700556A5C /* Frameworks */,
+				AA5741B41F0F74C700556A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5741B81F0F74C700556A5C /* PBXTargetDependency */,
+			);
+			name = MusollaTests;
+			productName = MusollaTests;
+			productReference = AA5741B61F0F74C700556A5C /* MusollaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA5741C01F0F74C700556A5C /* MusollaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5741D01F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaUITests" */;
+			buildPhases = (
+				AA5741BD1F0F74C700556A5C /* Sources */,
+				AA5741BE1F0F74C700556A5C /* Frameworks */,
+				AA5741BF1F0F74C700556A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5741C31F0F74C700556A5C /* PBXTargetDependency */,
+			);
+			name = MusollaUITests;
+			productName = MusollaUITests;
+			productReference = AA5741C11F0F74C700556A5C /* MusollaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5741971F0F74C600556A5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = msociety;
+				TargetAttributes = {
+					AA57419E1F0F74C600556A5C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PL82KCZF4N;
+						ProvisioningStyle = Automatic;
+					};
+					AA5741B51F0F74C700556A5C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PL82KCZF4N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA57419E1F0F74C600556A5C;
+					};
+					AA5741C01F0F74C700556A5C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PL82KCZF4N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA57419E1F0F74C600556A5C;
+					};
+				};
+			};
+			buildConfigurationList = AA57419A1F0F74C600556A5C /* Build configuration list for PBXProject "Musolla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5741961F0F74C600556A5C;
+			productRefGroup = AA5741A01F0F74C600556A5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA57419E1F0F74C600556A5C /* Musolla */,
+				AA5741B51F0F74C700556A5C /* MusollaTests */,
+				AA5741C01F0F74C700556A5C /* MusollaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA57419D1F0F74C600556A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5741B01F0F74C600556A5C /* LaunchScreen.storyboard in Resources */,
+				AA5741AD1F0F74C600556A5C /* Assets.xcassets in Resources */,
+				AA5741A81F0F74C600556A5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741B41F0F74C700556A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741BF1F0F74C700556A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA57419B1F0F74C600556A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5741A51F0F74C600556A5C /* ViewController.swift in Sources */,
+				AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */,
+				AA5741A31F0F74C600556A5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741B21F0F74C700556A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5741BB1F0F74C700556A5C /* MusollaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5741BD1F0F74C700556A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5741C61F0F74C700556A5C /* MusollaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5741B81F0F74C700556A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA57419E1F0F74C600556A5C /* Musolla */;
+			targetProxy = AA5741B71F0F74C700556A5C /* PBXContainerItemProxy */;
+		};
+		AA5741C31F0F74C700556A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA57419E1F0F74C600556A5C /* Musolla */;
+			targetProxy = AA5741C21F0F74C700556A5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5741A61F0F74C600556A5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5741A71F0F74C600556A5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5741AF1F0F74C600556A5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA5741C81F0F74C700556A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA5741C91F0F74C700556A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5741CB1F0F74C700556A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = Musolla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.Musolla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AA5741CC1F0F74C700556A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = Musolla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.Musolla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AA5741CE1F0F74C700556A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = MusollaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.MusollaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musolla.app/Musolla";
+			};
+			name = Debug;
+		};
+		AA5741CF1F0F74C700556A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = MusollaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.MusollaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Musolla.app/Musolla";
+			};
+			name = Release;
+		};
+		AA5741D11F0F74C700556A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = MusollaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.MusollaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Musolla;
+			};
+			name = Debug;
+		};
+		AA5741D21F0F74C700556A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PL82KCZF4N;
+				INFOPLIST_FILE = MusollaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.msociety.MusollaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Musolla;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA57419A1F0F74C600556A5C /* Build configuration list for PBXProject "Musolla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5741C81F0F74C700556A5C /* Debug */,
+				AA5741C91F0F74C700556A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5741CA1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "Musolla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5741CB1F0F74C700556A5C /* Debug */,
+				AA5741CC1F0F74C700556A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA5741CD1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5741CE1F0F74C700556A5C /* Debug */,
+				AA5741CF1F0F74C700556A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA5741D01F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5741D11F0F74C700556A5C /* Debug */,
+				AA5741D21F0F74C700556A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA5741A91F0F74C600556A5C /* Musolla.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA5741AA1F0F74C600556A5C /* Musolla.xcdatamodel */,
+			);
+			currentVersion = AA5741AA1F0F74C600556A5C /* Musolla.xcdatamodel */;
+			path = Musolla.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA5741971F0F74C600556A5C /* Project object */;
+}
