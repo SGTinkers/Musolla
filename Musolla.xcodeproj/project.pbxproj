@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1FA0AE1F1CA341009AA085 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */; };
 		AA5741A31F0F74C600556A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A21F0F74C600556A5C /* AppDelegate.swift */; };
-		AA5741A51F0F74C600556A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A41F0F74C600556A5C /* ViewController.swift */; };
 		AA5741A81F0F74C600556A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5741A61F0F74C600556A5C /* Main.storyboard */; };
 		AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5741A91F0F74C600556A5C /* Musolla.xcdatamodeld */; };
 		AA5741AD1F0F74C600556A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5741AC1F0F74C600556A5C /* Assets.xcassets */; };
 		AA5741B01F0F74C600556A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */; };
 		AA5741BB1F0F74C700556A5C /* MusollaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741BA1F0F74C700556A5C /* MusollaTests.swift */; };
 		AA5741C61F0F74C700556A5C /* MusollaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741C51F0F74C700556A5C /* MusollaUITests.swift */; };
+		AAD293C91F19A12700E96617 /* Musolla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293C81F19A12700E96617 /* Musolla.swift */; };
+		AAD293CB1F19A18D00E96617 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293CA1F19A18D00E96617 /* Database.swift */; };
+		AAF94B891F1CCE64001602F0 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF94B881F1CCE64001602F0 /* LocationSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AA57419F1F0F74C600556A5C /* Musolla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musolla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5741A21F0F74C600556A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5741A41F0F74C600556A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA5741A71F0F74C600556A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5741AA1F0F74C600556A5C /* Musolla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Musolla.xcdatamodel; sourceTree = "<group>"; };
 		AA5741AC1F0F74C600556A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		AA5741C11F0F74C700556A5C /* MusollaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusollaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5741C51F0F74C700556A5C /* MusollaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusollaUITests.swift; sourceTree = "<group>"; };
 		AA5741C71F0F74C700556A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD293C81F19A12700E96617 /* Musolla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Musolla.swift; sourceTree = "<group>"; };
+		AAD293CA1F19A18D00E96617 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		AAF94B881F1CCE64001602F0 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		AA5741A11F0F74C600556A5C /* Musolla */ = {
 			isa = PBXGroup;
 			children = (
+				AAD293C71F19A0CE00E96617 /* entity */,
 				AA5741A21F0F74C600556A5C /* AppDelegate.swift */,
-				AA5741A41F0F74C600556A5C /* ViewController.swift */,
+				AAD293CA1F19A18D00E96617 /* Database.swift */,
 				AA5741A61F0F74C600556A5C /* Main.storyboard */,
+				AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */,
+				AAF94B881F1CCE64001602F0 /* LocationSearchViewController.swift */,
 				AA5741AC1F0F74C600556A5C /* Assets.xcassets */,
 				AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */,
 				AA5741B11F0F74C700556A5C /* Info.plist */,
@@ -126,6 +135,14 @@
 				AA5741C71F0F74C700556A5C /* Info.plist */,
 			);
 			path = MusollaUITests;
+			sourceTree = "<group>";
+		};
+		AAD293C71F19A0CE00E96617 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AAD293C81F19A12700E96617 /* Musolla.swift */,
+			);
+			name = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5741A51F0F74C600556A5C /* ViewController.swift in Sources */,
+				AA1FA0AE1F1CA341009AA085 /* MapViewController.swift in Sources */,
+				AAF94B891F1CCE64001602F0 /* LocationSearchViewController.swift in Sources */,
 				AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */,
+				AAD293C91F19A12700E96617 /* Musolla.swift in Sources */,
+				AAD293CB1F19A18D00E96617 /* Database.swift in Sources */,
 				AA5741A31F0F74C600556A5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +538,7 @@
 				AA5741CC1F0F74C700556A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5741CD1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +547,7 @@
 				AA5741CF1F0F74C700556A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5741D01F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +556,7 @@
 				AA5741D21F0F74C700556A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
