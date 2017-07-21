@@ -31,13 +31,16 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="vrR-By-pbL" kind="show" id="atO-kv-XYL"/>
+                                    <segue destination="vrR-By-pbL" kind="show" identifier="toLocationSearch" id="atO-kv-XYL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2iu-ho-9f3"/>
+                    <connections>
+                        <outlet property="mapView" destination="Dkg-bv-VO4" id="8sn-YH-F8q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3B-CW-ete" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

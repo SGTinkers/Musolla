@@ -18,6 +18,7 @@
 		AA5741C61F0F74C700556A5C /* MusollaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5741C51F0F74C700556A5C /* MusollaUITests.swift */; };
 		AAD293C91F19A12700E96617 /* Musolla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293C81F19A12700E96617 /* Musolla.swift */; };
 		AAD293CB1F19A18D00E96617 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293CA1F19A18D00E96617 /* Database.swift */; };
+		AAF8AFFC1F207A6400D1E56C /* MusollaAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		AA5741C71F0F74C700556A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD293C81F19A12700E96617 /* Musolla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Musolla.swift; sourceTree = "<group>"; };
 		AAD293CA1F19A18D00E96617 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusollaAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,9 @@
 				AA5741A21F0F74C600556A5C /* AppDelegate.swift */,
 				AAD293CA1F19A18D00E96617 /* Database.swift */,
 				AA5741A61F0F74C600556A5C /* Main.storyboard */,
-				AA0D17131F1F0F4A007DD07B /* LocationSearchTableViewController.swift */,
 				AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */,
+				AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */,
+				AA0D17131F1F0F4A007DD07B /* LocationSearchTableViewController.swift */,
 				AA5741AC1F0F74C600556A5C /* Assets.xcassets */,
 				AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */,
 				AA5741B11F0F74C700556A5C /* Info.plist */,
@@ -284,6 +287,7 @@
 			files = (
 				AA1FA0AE1F1CA341009AA085 /* MapViewController.swift in Sources */,
 				AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */,
+				AAF8AFFC1F207A6400D1E56C /* MusollaAnnotation.swift in Sources */,
 				AAD293C91F19A12700E96617 /* Musolla.swift in Sources */,
 				AAD293CB1F19A18D00E96617 /* Database.swift in Sources */,
 				AA0D17141F1F0F4A007DD07B /* LocationSearchTableViewController.swift in Sources */,

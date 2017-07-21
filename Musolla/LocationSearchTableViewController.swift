@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+protocol LocationSelectProtocol {
+	func didSelect(location: MKMapItem?)
+}
+
 class LocationSearchTableViewController: UITableViewController, UISearchBarDelegate, MKLocalSearchCompleterDelegate {
 
 	/*
@@ -25,6 +29,8 @@ class LocationSearchTableViewController: UITableViewController, UISearchBarDeleg
 		
 		whatever we get is whatever we pass back
 	*/
+
+	var delegate: LocationSelectProtocol?
 
 	var searchController: UISearchController?
 	var localSearchCompleter: MKLocalSearchCompleter?
@@ -83,6 +89,21 @@ class LocationSearchTableViewController: UITableViewController, UISearchBarDeleg
 
         return cell
     }
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let itemSelected = self.filteredLocation?[indexPath.row]
+		
+		let localSearchReq = MKLocalSearchRequest()
+		localSearchReq.naturalLanguageQuery = itemSelected?.title
+		let search = MKLocalSearch.init(request: localSearchReq)
+		search.start { (response, error) in
+			let item = response?.mapItems.first
+			
+			// delegate here
+			self.delegate?.didSelect(location: item)
+			let _ = self.navigationController?.popViewController(animated: true)
+		}
+	}
 	
 	// MARK: UISearchBarDelegate
 	public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

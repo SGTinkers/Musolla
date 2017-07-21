@@ -32,8 +32,8 @@ class Database {
 //			}
 			
 			json!!.forEach({ (dict: (key: String, value: Any)) in
-				print("Key: \(dict.key)")
-				print("Value: \(dict.value)")
+//				print("Key: \(dict.key)")
+//				print("Value: \(dict.value)")
 				
 				let key = dict.key
 				
@@ -47,7 +47,7 @@ class Database {
 				let locationDict = individualMusollaDetail?["location"] as? [String: Any]
 				let latitude = locationDict?["latitude"] as? Double
 				let longitude = locationDict?["longitude"] as? Double
-				let location = CLLocation.init(latitude: latitude!, longitude: longitude!)
+				let location = CLLocationCoordinate2D.init(latitude: latitude!, longitude: longitude!)
 				
 				let trainStation = individualMusollaDetail?["mrt"] as? String
 				let name = individualMusollaDetail?["name"] as? String

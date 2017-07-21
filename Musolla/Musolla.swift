@@ -17,7 +17,7 @@ class Musolla {
 	let directions: String?
 	//let geohash
 	let level: Int?
-	let location: CLLocation?
+	let location: CLLocationCoordinate2D?
 	let trainStation: String?
 	let name: String?
 	let provision: String?
@@ -26,7 +26,7 @@ class Musolla {
 	let updatedAtDate: String?
 	let uuid: String?
 	
-	init(key: String?, address: String?, createdAtDate: String?, directions: String?, level: Int?, location: CLLocation?, trainStation: String?, name: String?, provision: String?, toiletLevel: Int?, type: String?, updatedAtDate: String?, uuid: String?) {
+	init(key: String?, address: String?, createdAtDate: String?, directions: String?, level: Int?, location: CLLocationCoordinate2D?, trainStation: String?, name: String?, provision: String?, toiletLevel: Int?, type: String?, updatedAtDate: String?, uuid: String?) {
 		self.key = key
 		self.address = address
 		self.createdAtDate = createdAtDate
