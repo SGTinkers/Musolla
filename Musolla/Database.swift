@@ -35,29 +35,34 @@ class Database {
 //				print("Key: \(dict.key)")
 //				print("Value: \(dict.value)")
 				
-				let key = dict.key
-				
 				let individualMusollaDetail = dict.value as? [String: Any]
 				
-				let address = individualMusollaDetail?["address"] as? String
 				let createdAtDate = individualMusollaDetail?["createdAt"] as? String
-				let directions = individualMusollaDetail?["directions"] as? String
+				let name = individualMusollaDetail?["name"] as? String
+				let address = individualMusollaDetail?["address"] as? String
+				let trainStation = individualMusollaDetail?["mrt"] as? String
 				let level = individualMusollaDetail?["level"] as? Int
+				let toiletLevel = individualMusollaDetail?["toiletLevel"] as? Int
+				let femalePax = individualMusollaDetail?["femaleCapacity"] as? Int
+				let malePax = individualMusollaDetail?["maleCapacity"] as? Int
+				let unisexPax = individualMusollaDetail?["unisexCapacity"] as? Int
+				let directions = individualMusollaDetail?["directions"] as? String
+				let provision = individualMusollaDetail?["provision"] as? String
+				let remarks = individualMusollaDetail?["remarks"] as? String
+				let submitterName = individualMusollaDetail?["submitterName"] as? String
+				
+				let key = dict.key
+				let uuid = individualMusollaDetail?["uuid"] as? String
 				
 				let locationDict = individualMusollaDetail?["location"] as? [String: Any]
 				let latitude = locationDict?["latitude"] as? Double
 				let longitude = locationDict?["longitude"] as? Double
 				let location = CLLocationCoordinate2D.init(latitude: latitude!, longitude: longitude!)
 				
-				let trainStation = individualMusollaDetail?["mrt"] as? String
-				let name = individualMusollaDetail?["name"] as? String
-				let provision = individualMusollaDetail?["provision"] as? String
-				let toiletLevel = individualMusollaDetail?["toiletLevel"] as? Int
 				let type = individualMusollaDetail?["type"] as? String
-				let updatedAtDate = individualMusollaDetail?["updatedAt"] as? String
-				let uuid = individualMusollaDetail?["uuid"] as? String
 				
-				let musolla = Musolla.init(key: key, address: address, createdAtDate: createdAtDate, directions: directions, level: level, location: location, trainStation: trainStation, name: name, provision: provision, toiletLevel: toiletLevel, type: type, updatedAtDate: updatedAtDate, uuid: uuid)
+				
+				let musolla = Musolla.init(createdAtDate: createdAtDate, name: name, address: address, trainStation: trainStation, level: level, toiletLevel: toiletLevel, femalePax: femalePax, malePax: malePax, unisexPax: unisexPax, directions: directions, provision: provision, remarks: remarks, submitterName: submitterName, key: key, uuid: uuid, location: location, type: type)
 				musollaArr.append(musolla)
 			})
 

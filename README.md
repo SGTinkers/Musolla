@@ -6,6 +6,9 @@ You can:
 - Contribute a musolla location through the app
 
 ### Changelog
+22 July 2017:
+- One-time authentication implemented
+
 21 July 2017:
 - Fully working prototype
 - Location search display works

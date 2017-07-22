@@ -24,24 +24,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		print("did finish launching")
 		
-		self.config = OAuthConfiguration.init(token: "5645e32da30ffa6d4913", secret: "807ae681d713daaf77f1572a37f3c2340357cac1", scopes: ["repo", "read:org"])
-		let url = self.config?.authenticate()
-		
-		UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+		let request = NSFetchRequest<Credentials>.init(entityName: "Credentials")
+		do {
+			let items = try self.persistentContainer.viewContext.fetch(request)
+			
+			if items.count == 0 {
+				self.config = OAuthConfiguration.init(token: "5645e32da30ffa6d4913", secret: "807ae681d713daaf77f1572a37f3c2340357cac1", scopes: ["repo", "read:org"])
+				let url = self.config?.authenticate()
+				
+				UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+			}
+			
+			if let item = items.first {
+				var token = TokenConfiguration()
+				token.accessToken = item.accessToken
+				
+				let _ = Octokit(token).me() { response in
+					switch response {
+					case .success(let user):
+						print("User login: \(user.login!)")
+					case .failure(let error):
+						print("Error: \(error)")
+					}
+				}
+			}
+		} catch {
+			print("Error")
+		}
 		
 		return true
 	}
 
 	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-		print("outside open url")
-	
 		self.config?.handleOpenURL(url: url, completion: { (token) in
-			print("In handle open URL")
+			// save token
+			let credentials = NSEntityDescription.insertNewObject(forEntityName: "Credentials", into: self.persistentContainer.viewContext) as? Credentials
+			credentials?.accessToken = token.accessToken
 			
-			self.globalToken = TokenConfiguration()
-			self.globalToken?.accessToken = token.accessToken
+			do {
+				try self.persistentContainer.viewContext.save()
+			} catch {
+				print("Error")
+			}
 			
-			let _ = Octokit(self.globalToken!).me() { response in
+			let _ = Octokit(token).me() { response in
 				switch response {
 					case .success(let user):
 						print("User login: \(user.login!)")

@@ -68,17 +68,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 			"createdAt": "",
 			"updatedAt": ""
 		]
-
-		print("Dict: \((dict as? NSDictionary)!)")
-	
-//		Octokit(config).postIssue("ruqqq", repository: "musolla-database", title: "Found a bug", body: "I'm having a problem with this.", assignee: "octocat") { response in
-//			switch response {
-//			case .Success(let issue):
-//			// do something with the issue
-//			case .Failure:
-//				// handle any errors
-//			}
-//		}
+		
+		let issueBody = "```swift\n\((dict as? NSDictionary)!)\n```"
+		print("Issue body: \(issueBody)")
+		
+		let _ = Octokit.init(token!).postIssue(URLSession.shared, owner: "ruqqq", repository: "musolla-database", title: "Testing issue function", body: issueBody, assignee: nil) { (response) in
+			switch response {
+				case .success(let issue):
+				break
+				case .failure:
+				break
+				// handle any errors
+			}
+		}
+		
+		
 	}
 
     override func didReceiveMemoryWarning() {
@@ -93,8 +97,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 	
 	// MARK: CLLocationManagerDelegate delegate function
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-		//print("Getting user location..")
-
 		guard let tmpUserLocation = locations.first else {
 			return
 		}
@@ -129,35 +131,45 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 	}
 	
 	public func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-		let directionsRequest = MKDirectionsRequest()
-		directionsRequest.transportType = .automobile
+		let musollaDetailsVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MusollaDetailsViewController") as? MusollaDetailsViewController
 		
-		let placemark = MKPlacemark.init(coordinate: self.mapView.selectedAnnotations[0].coordinate)
-		let selectedMusolla = MKMapItem.init(placemark: placemark)
+		let selectedAnnotation = self.mapView.selectedAnnotations[0] as? MusollaAnnotation
+		let musolla = selectedAnnotation?.musolla
+		musollaDetailsVC?.musolla = musolla
 		
-		directionsRequest.source = MKMapItem.forCurrentLocation()
-		directionsRequest.destination = selectedMusolla
+		self.navigationController?.pushViewController(musollaDetailsVC!, animated: true)
 		
-		let directions = MKDirections.init(request: directionsRequest)
-		directions.calculate { (directionsResponse, error) in
-			if let route = directionsResponse?.routes[0] {
-				
-				self.mapView.add(route.polyline)
-				
-				// this is essentially how you frame what you want to see
-				// you have 10 points padding all around
-				self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0), animated: false)
-				
-				selectedMusolla.name = self.mapView.selectedAnnotations[0].title!!
-				selectedMusolla.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeDriving: MKLaunchOptionsDirectionsModeKey])
-			} else if let _ = error {
-				let alert = UIAlertController(title: nil, message: "Directions not available.", preferredStyle: .alert)
-				let okButton = UIAlertAction.init(title: "Directions not available.", style: .default, handler: nil)
-				alert.addAction(okButton)
-				
-				self.present(alert, animated: true, completion: nil)
-			}
-		}
+		
+	
+//		let directionsRequest = MKDirectionsRequest()
+//		directionsRequest.transportType = .automobile
+//		
+//		let placemark = MKPlacemark.init(coordinate: self.mapView.selectedAnnotations[0].coordinate)
+//		let selectedMusolla = MKMapItem.init(placemark: placemark)
+//		
+//		directionsRequest.source = MKMapItem.forCurrentLocation()
+//		directionsRequest.destination = selectedMusolla
+//		
+//		let directions = MKDirections.init(request: directionsRequest)
+//		directions.calculate { (directionsResponse, error) in
+//			if let route = directionsResponse?.routes[0] {
+//				
+//				self.mapView.add(route.polyline)
+//				
+//				// this is essentially how you frame what you want to see
+//				// you have 10 points padding all around
+//				self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0), animated: false)
+//				
+//				selectedMusolla.name = self.mapView.selectedAnnotations[0].title!!
+//				selectedMusolla.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeDriving: MKLaunchOptionsDirectionsModeKey])
+//			} else if let _ = error {
+//				let alert = UIAlertController(title: nil, message: "Directions not available.", preferredStyle: .alert)
+//				let okButton = UIAlertAction.init(title: "Directions not available.", style: .default, handler: nil)
+//				alert.addAction(okButton)
+//				
+//				self.present(alert, animated: true, completion: nil)
+//			}
+//		}
 	}
 	
 	func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -189,7 +201,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 					let distance = userLocation.distance(from: musollaLocation)
 					
 					if distance < 5000 { // 5km radius
-						let musollaAnnotation = MusollaAnnotation.init(withCoordinate: musolla.location!, title: musolla.name, subtitle: musolla.address)
+						let musollaAnnotation = MusollaAnnotation.init(withCoordinate: musolla.location!, title: musolla.name, subtitle: musolla.address, musolla: musolla)
 						
 						self.mapView.addAnnotation(musollaAnnotation)
 					}
