@@ -19,6 +19,9 @@
 		AAD293C91F19A12700E96617 /* Musolla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293C81F19A12700E96617 /* Musolla.swift */; };
 		AAD293CB1F19A18D00E96617 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293CA1F19A18D00E96617 /* Database.swift */; };
 		AAF8AFFC1F207A6400D1E56C /* MusollaAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */; };
+		B3812CA76CBFD78AD0191E0D /* Pods_Musolla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA1656D9324A9AADF01AEF9 /* Pods_Musolla.framework */; };
+		B642C7834B4D268C0CFAFCC3 /* Pods_MusollaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30ED2239EF412F305A76122 /* Pods_MusollaTests.framework */; };
+		EAD24747935C1AD12C9F45CF /* Pods_MusollaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFECA04FB8846E21BDF55B5 /* Pods_MusollaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09B88DA649B0A8E88FA6FCF2 /* Pods-MusollaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusollaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		101CD18302B62F1B406C72CE /* Pods-MusollaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusollaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11F2E391E3C1E3A7190C3D1A /* Pods-Musolla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musolla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Musolla/Pods-Musolla.release.xcconfig"; sourceTree = "<group>"; };
+		3D6FDC621B8E440508751255 /* Pods-MusollaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusollaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusollaTests/Pods-MusollaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA1656D9324A9AADF01AEF9 /* Pods_Musolla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Musolla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B20CDFD0F2A2C047C68F52 /* Pods-Musolla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Musolla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Musolla/Pods-Musolla.debug.xcconfig"; sourceTree = "<group>"; };
+		9EFECA04FB8846E21BDF55B5 /* Pods_MusollaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusollaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0D17131F1F0F4A007DD07B /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AA57419F1F0F74C600556A5C /* Musolla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musolla.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +67,8 @@
 		AAD293C81F19A12700E96617 /* Musolla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Musolla.swift; sourceTree = "<group>"; };
 		AAD293CA1F19A18D00E96617 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusollaAnnotation.swift; sourceTree = "<group>"; };
+		AC9E266094AC9FB460B0CE8D /* Pods-MusollaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusollaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusollaTests/Pods-MusollaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E30ED2239EF412F305A76122 /* Pods_MusollaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusollaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3812CA76CBFD78AD0191E0D /* Pods_Musolla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B642C7834B4D268C0CFAFCC3 /* Pods_MusollaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD24747935C1AD12C9F45CF /* Pods_MusollaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5230E8FEAB9E186320BCDCD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54B20CDFD0F2A2C047C68F52 /* Pods-Musolla.debug.xcconfig */,
+				11F2E391E3C1E3A7190C3D1A /* Pods-Musolla.release.xcconfig */,
+				3D6FDC621B8E440508751255 /* Pods-MusollaTests.debug.xcconfig */,
+				AC9E266094AC9FB460B0CE8D /* Pods-MusollaTests.release.xcconfig */,
+				101CD18302B62F1B406C72CE /* Pods-MusollaUITests.debug.xcconfig */,
+				09B88DA649B0A8E88FA6FCF2 /* Pods-MusollaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58ED691CAEC283E6AD8FD159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA1656D9324A9AADF01AEF9 /* Pods_Musolla.framework */,
+				E30ED2239EF412F305A76122 /* Pods_MusollaTests.framework */,
+				9EFECA04FB8846E21BDF55B5 /* Pods_MusollaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA5741961F0F74C600556A5C = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +129,8 @@
 				AA5741B91F0F74C700556A5C /* MusollaTests */,
 				AA5741C41F0F74C700556A5C /* MusollaUITests */,
 				AA5741A01F0F74C600556A5C /* Products */,
+				5230E8FEAB9E186320BCDCD7 /* Pods */,
+				58ED691CAEC283E6AD8FD159 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5741CA1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "Musolla" */;
 			buildPhases = (
+				72F1BC7CAEF1B29743F04CD5 /* [CP] Check Pods Manifest.lock */,
 				AA57419B1F0F74C600556A5C /* Sources */,
 				AA57419C1F0F74C600556A5C /* Frameworks */,
 				AA57419D1F0F74C600556A5C /* Resources */,
+				EC078E75EB33CA48C19A5D39 /* [CP] Embed Pods Frameworks */,
+				257A6C564952BFC3D29E732B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5741CD1F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaTests" */;
 			buildPhases = (
+				5C8A2B56AC3D655AB758A074 /* [CP] Check Pods Manifest.lock */,
 				AA5741B21F0F74C700556A5C /* Sources */,
 				AA5741B31F0F74C700556A5C /* Frameworks */,
 				AA5741B41F0F74C700556A5C /* Resources */,
+				DE408999A2C192E7B3BC930C /* [CP] Embed Pods Frameworks */,
+				BFEDD6472A741DD2CE9B5F55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5741D01F0F74C700556A5C /* Build configuration list for PBXNativeTarget "MusollaUITests" */;
 			buildPhases = (
+				33448487F1D9C632C3548833 /* [CP] Check Pods Manifest.lock */,
 				AA5741BD1F0F74C700556A5C /* Sources */,
 				AA5741BE1F0F74C700556A5C /* Frameworks */,
 				AA5741BF1F0F74C700556A5C /* Resources */,
+				9A52C762B918DFD62BB7CE66 /* [CP] Embed Pods Frameworks */,
+				3818620C54457C60CF814CD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +328,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		257A6C564952BFC3D29E732B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Musolla/Pods-Musolla-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33448487F1D9C632C3548833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3818620C54457C60CF814CD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8A2B56AC3D655AB758A074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72F1BC7CAEF1B29743F04CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A52C762B918DFD62BB7CE66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEDD6472A741DD2CE9B5F55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusollaTests/Pods-MusollaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE408999A2C192E7B3BC930C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusollaTests/Pods-MusollaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC078E75EB33CA48C19A5D39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Musolla/Pods-Musolla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA57419B1F0F74C600556A5C /* Sources */ = {
@@ -441,6 +628,7 @@
 		};
 		AA5741CB1F0F74C700556A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B20CDFD0F2A2C047C68F52 /* Pods-Musolla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PL82KCZF4N;
@@ -454,6 +642,7 @@
 		};
 		AA5741CC1F0F74C700556A5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F2E391E3C1E3A7190C3D1A /* Pods-Musolla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PL82KCZF4N;
@@ -467,6 +656,7 @@
 		};
 		AA5741CE1F0F74C700556A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6FDC621B8E440508751255 /* Pods-MusollaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +672,7 @@
 		};
 		AA5741CF1F0F74C700556A5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9E266094AC9FB460B0CE8D /* Pods-MusollaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +688,7 @@
 		};
 		AA5741D11F0F74C700556A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101CD18302B62F1B406C72CE /* Pods-MusollaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PL82KCZF4N;
@@ -511,6 +703,7 @@
 		};
 		AA5741D21F0F74C700556A5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B88DA649B0A8E88FA6FCF2 /* Pods-MusollaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PL82KCZF4N;

@@ -1,0 +1,1109 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038D45A6D9D641CA74D237672624416E /* Pods-MusollaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 625C1CC2E9481C624251DC3F6F62EDC0 /* Pods-MusollaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0608A07745971C0DE480414F37E6BC10 /* RequestKitSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D57201ECA4AB049EB780267E010B4C /* RequestKitSession.swift */; };
+		07E13CC1F5D370A6F00B16479B9059C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */; };
+		16E8089A3F5D5CA4A56BACA38FBF8877 /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423164BE5967A8E8BEBE764BDFFF301F /* URL+URLParameters.swift */; };
+		192D57CEC3C4D587FF6788BAA5DB2D91 /* Pods-MusollaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B402FBFE37D950E057EEAD664BE4DBE /* Pods-MusollaUITests-dummy.m */; };
+		2147371C57775F09FB12A1BDA4774FD2 /* NBNRequestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E670B9CE05878514FB8B7F5281237BFD /* NBNRequestKit-dummy.m */; };
+		3A4F51AB0C9ABFB244F54A78A27A2ABC /* OctoKit.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070E7200891AE1431E028794D680A0B3 /* OctoKit.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BBA80844DECAD9E806F613E5ADF3A69 /* OctoKit.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D43E7D9302755711AEE51B12B5B86D2 /* OctoKit.swift-dummy.m */; };
+		463DB463EA65328A0F7E8E7B66B568E3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9859C5D7859A533D79B3D68CDBA1F /* Label.swift */; };
+		50A647BB542EC08327233A42A664F380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */; };
+		54862AB43F3DF56125EF10E9F7B0D43D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */; };
+		5BD6145796A27BCF88844BC82116CD2D /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEC6CDBDA03767D18B73D4FBB308D0 /* Issue.swift */; };
+		6220DF5854FB9CC5C47A801D900AEC8B /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5171D140B732273BE5A333E47F5AB7 /* Repositories.swift */; };
+		701707CEDE198181F1DB04DABA08FD5C /* Pods-Musolla-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AA2AC031ACE8B724C4D3B48F462D7 /* Pods-Musolla-dummy.m */; };
+		70375F916331C7F066059605D71366F4 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92762D58E9E661CF7B0388493211B295 /* PublicKey.swift */; };
+		76A71E76840EE41D2E04901440D52490 /* Pods-Musolla-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3CFF42C5DAEE968F8B01AA121D48E59 /* Pods-Musolla-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88661DEFF64F86A1E09DE191072DFB7D /* NBNRequestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7C5556AE20A02EEB44C084548E2D53 /* NBNRequestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A47752B7DCAC7373264D6852EFFE9582 /* Pods-MusollaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0838CD852A65730846295FA588F52E61 /* Pods-MusollaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB93F7CA799E79A21A7F386A0C9B064 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB8E9279F95EA3AF05EE86592F0499 /* Configuration.swift */; };
+		AEAA664ECA7441908AA3B19752C5D802 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520DE94C820467696F2558F681134CE /* Milestone.swift */; };
+		B00F68F7F28269C084B00F5D18B9B30F /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF80850C384FE2CDEBCF36C5E64161AB /* Octokit.swift */; };
+		B25A70372B28E1FCCC9281933FBAB003 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D639752F87242204DF4F807218884 /* Router.swift */; };
+		B330A09D2A2E79E4891483875C853A44 /* JSONPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B6662E38F08676146A6E4C2C188F9 /* JSONPostRouter.swift */; };
+		BEA7393B22C920177DA4A14CDE82075E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E95196AFF7CF606BAF8D85ADBA7F6 /* User.swift */; };
+		C133A24FFEE28574A9F8B6E55CB5E9B6 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B38617A61DA5E852E3E304C757848 /* Follow.swift */; };
+		C34D42B0C0D895D0D4DC95F737C13296 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CD52B3E38C8CB54726ABD1095749B3 /* Stars.swift */; };
+		C431232C345DC651B9DA8E7B98A55593 /* Pods-MusollaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BE808EAF3039ACFD494F5EBE69121 /* Pods-MusollaTests-dummy.m */; };
+		D0350B0FBD8143A0ADD643DC97862509 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC2C4B54CE6F3465CE4752DECDE284A /* RequestKit.framework */; };
+		E2E16CA2E28F772BC6426ADEFD4271D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */; };
+		E6503948A322643C195CD9A60618EEAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */; };
+		F6BDD5A23718F96790E770A959332B1D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F350471F0FFE611BC628628CD4760B /* Time.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31208CF7D1C0C36775CDDB74B9B679B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F88FA4604C7F1CE7F27F55C436BDCBB;
+			remoteInfo = OctoKit.swift;
+		};
+		6311E1137EF1F40A9844F13A395EE528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97984C2BA8A5852B7F3967B084B713D5;
+			remoteInfo = NBNRequestKit;
+		};
+		CB6D276C98F6343E09BEA05BA804F08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97984C2BA8A5852B7F3967B084B713D5;
+			remoteInfo = NBNRequestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0022ACCB7B44B942EA859A12DA8747D4 /* RequestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RequestKit.framework; path = NBNRequestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060A3742871AA6867321B457F2BFC25F /* Pods-MusollaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusollaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		070E7200891AE1431E028794D680A0B3 /* OctoKit.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OctoKit.swift-umbrella.h"; sourceTree = "<group>"; };
+		07AE77221C1A8F7D4AF79C919A3F665F /* Pods-Musolla.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Musolla.modulemap"; sourceTree = "<group>"; };
+		0838CD852A65730846295FA588F52E61 /* Pods-MusollaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MusollaTests-umbrella.h"; sourceTree = "<group>"; };
+		0A9546B2131B3E2CD88219F433CC904D /* Pods-Musolla-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Musolla-acknowledgements.plist"; sourceTree = "<group>"; };
+		0AC2C4B54CE6F3465CE4752DECDE284A /* RequestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RequestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE26F3EE0B0A682D7938AA97D1F8314 /* NBNRequestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NBNRequestKit.modulemap; sourceTree = "<group>"; };
+		1A5171D140B732273BE5A333E47F5AB7 /* Repositories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repositories.swift; path = OctoKit/Repositories.swift; sourceTree = "<group>"; };
+		1F4AA2AC031ACE8B724C4D3B48F462D7 /* Pods-Musolla-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Musolla-dummy.m"; sourceTree = "<group>"; };
+		3520DE94C820467696F2558F681134CE /* Milestone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Milestone.swift; path = OctoKit/Milestone.swift; sourceTree = "<group>"; };
+		3AD9859C5D7859A533D79B3D68CDBA1F /* Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Label.swift; path = OctoKit/Label.swift; sourceTree = "<group>"; };
+		3B8DA93FBF11F447C288FD1B2F0B703B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423164BE5967A8E8BEBE764BDFFF301F /* URL+URLParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+URLParameters.swift"; path = "OctoKit/URL+URLParameters.swift"; sourceTree = "<group>"; };
+		432C601C311B731FC2341543339F996E /* Pods-MusollaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusollaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		455294282100D3292B060C7DEE1B99BB /* Pods-MusollaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MusollaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46DA5C96B70B73E8752413CA76249B50 /* Pods-MusollaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusollaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58CD52B3E38C8CB54726ABD1095749B3 /* Stars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stars.swift; path = OctoKit/Stars.swift; sourceTree = "<group>"; };
+		5B1CB5C1707DA0FA4622A67482212754 /* Octokit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Octokit.framework; path = OctoKit.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B402FBFE37D950E057EEAD664BE4DBE /* Pods-MusollaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MusollaUITests-dummy.m"; sourceTree = "<group>"; };
+		5D43E7D9302755711AEE51B12B5B86D2 /* OctoKit.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OctoKit.swift-dummy.m"; sourceTree = "<group>"; };
+		61C1CB96A8EF642AC2D766A535989400 /* Pods_MusollaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MusollaUITests.framework; path = "Pods-MusollaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		625C1CC2E9481C624251DC3F6F62EDC0 /* Pods-MusollaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MusollaUITests-umbrella.h"; sourceTree = "<group>"; };
+		627E95196AFF7CF606BAF8D85ADBA7F6 /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = OctoKit/User.swift; sourceTree = "<group>"; };
+		65DAAED2FA2AA71A9F6CE8F36D93EA47 /* Pods-Musolla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Musolla.debug.xcconfig"; sourceTree = "<group>"; };
+		69F350471F0FFE611BC628628CD4760B /* Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Time.swift; path = OctoKit/Time.swift; sourceTree = "<group>"; };
+		6D6A85F2AA21602C2AFABE77D9CD84EB /* Pods_Musolla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Musolla.framework; path = "Pods-Musolla.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E0E33FE9DDD811F70C5B6F01989A1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786A623E2A3BBB16ED8C30BC60E5C648 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0D639752F87242204DF4F807218884 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = RequestKit/Router.swift; sourceTree = "<group>"; };
+		7FC36BE673151012441D7E7D16907F01 /* Pods-Musolla-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Musolla-resources.sh"; sourceTree = "<group>"; };
+		7FCB3C9FC6C62BC1C645C449C65183A6 /* Pods-Musolla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Musolla.release.xcconfig"; sourceTree = "<group>"; };
+		8BFB3EDACE52A54B4EB0C46CB10CF986 /* Pods-MusollaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusollaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		92762D58E9E661CF7B0388493211B295 /* PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = OctoKit/PublicKey.swift; sourceTree = "<group>"; };
+		92D57201ECA4AB049EB780267E010B4C /* RequestKitSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestKitSession.swift; path = RequestKit/RequestKitSession.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A739C996E69D0C02461702636CE08A /* Pods-Musolla-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Musolla-frameworks.sh"; sourceTree = "<group>"; };
+		96237757EE16AD55B6357DFF65D93050 /* OctoKit.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OctoKit.swift.xcconfig; sourceTree = "<group>"; };
+		A3140326CAF96D0030515910327AA68A /* Pods-MusollaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MusollaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA28F20977E76B441D6C4A6C178C6CBB /* Pods-MusollaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MusollaUITests.modulemap"; sourceTree = "<group>"; };
+		ABDE2B53D8B86248668746A963E6B334 /* Pods-MusollaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusollaTests-frameworks.sh"; sourceTree = "<group>"; };
+		B60B38617A61DA5E852E3E304C757848 /* Follow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Follow.swift; path = OctoKit/Follow.swift; sourceTree = "<group>"; };
+		B9B89F5CA0F5DFA9FC7AF6682AA7EFA6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDBD7B47E2AB89B47C7D06209EEC4E0 /* Pods-MusollaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusollaUITests-resources.sh"; sourceTree = "<group>"; };
+		C0671448753D9A2FA324C9F0E30A895B /* Pods_MusollaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MusollaTests.framework; path = "Pods-MusollaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EEC6CDBDA03767D18B73D4FBB308D0 /* Issue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Issue.swift; path = OctoKit/Issue.swift; sourceTree = "<group>"; };
+		C3CFF42C5DAEE968F8B01AA121D48E59 /* Pods-Musolla-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Musolla-umbrella.h"; sourceTree = "<group>"; };
+		CA7FB45C33DF848DC199290CF65407D2 /* OctoKit.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OctoKit.swift-prefix.pch"; sourceTree = "<group>"; };
+		CF80850C384FE2CDEBCF36C5E64161AB /* Octokit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octokit.swift; path = OctoKit/Octokit.swift; sourceTree = "<group>"; };
+		D4310B570A5F22EB5C76DE4B592B5B4B /* OctoKit.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OctoKit.swift.modulemap; sourceTree = "<group>"; };
+		D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D83B6662E38F08676146A6E4C2C188F9 /* JSONPostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONPostRouter.swift; path = RequestKit/JSONPostRouter.swift; sourceTree = "<group>"; };
+		DBFB8E9279F95EA3AF05EE86592F0499 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = OctoKit/Configuration.swift; sourceTree = "<group>"; };
+		E0A941ED3D4BD602838793D6B99302EF /* Pods-MusollaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MusollaTests.modulemap"; sourceTree = "<group>"; };
+		E670B9CE05878514FB8B7F5281237BFD /* NBNRequestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBNRequestKit-dummy.m"; sourceTree = "<group>"; };
+		E709260E9F4C04902D4EA2DC92F11263 /* Pods-MusollaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MusollaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E71FDFAC70F62DF2FB4716A33274C7FD /* Pods-MusollaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusollaTests-resources.sh"; sourceTree = "<group>"; };
+		EB7C5556AE20A02EEB44C084548E2D53 /* NBNRequestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBNRequestKit-umbrella.h"; sourceTree = "<group>"; };
+		EC6E12BBCC3D6D7593EF46AF7EC14E26 /* Pods-Musolla-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Musolla-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC85FE3F2E087D2739DAB0D42083A29F /* NBNRequestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBNRequestKit-prefix.pch"; sourceTree = "<group>"; };
+		EC8A793520E07D578D208BED7E8D67EE /* NBNRequestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBNRequestKit.xcconfig; sourceTree = "<group>"; };
+		F028B53FFEE2686976520F2F4220611F /* Pods-MusollaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MusollaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2B4F519C39022F050F1D154D1B92AE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52BE808EAF3039ACFD494F5EBE69121 /* Pods-MusollaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MusollaTests-dummy.m"; sourceTree = "<group>"; };
+		FA4B43D4BEE03CEFF70B54C97449537D /* Pods-MusollaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusollaTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02A8D798632A4622187802DE158A8BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A647BB542EC08327233A42A664F380 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D42DE1279A24E34B001A6908D0F827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54862AB43F3DF56125EF10E9F7B0D43D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0A994FAF163B65CA8B418C0D30C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E13CC1F5D370A6F00B16479B9059C3 /* Foundation.framework in Frameworks */,
+				D0350B0FBD8143A0ADD643DC97862509 /* RequestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C20B9286809533364C1912FA3579FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6503948A322643C195CD9A60618EEAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAAA8989F9796BB5F6C9D75E743D75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E16CA2E28F772BC6426ADEFD4271D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF78DC53AF38198334AEF1C3B9BF6B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AC2C4B54CE6F3465CE4752DECDE284A /* RequestKit.framework */,
+				35DFC7A89E82BDB5D8B837B855AE1B32 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10BCA4A69AF889F86E6000B1EFEA7FAB /* Pods-MusollaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4F519C39022F050F1D154D1B92AE2 /* Info.plist */,
+				E0A941ED3D4BD602838793D6B99302EF /* Pods-MusollaTests.modulemap */,
+				E709260E9F4C04902D4EA2DC92F11263 /* Pods-MusollaTests-acknowledgements.markdown */,
+				A3140326CAF96D0030515910327AA68A /* Pods-MusollaTests-acknowledgements.plist */,
+				F52BE808EAF3039ACFD494F5EBE69121 /* Pods-MusollaTests-dummy.m */,
+				ABDE2B53D8B86248668746A963E6B334 /* Pods-MusollaTests-frameworks.sh */,
+				E71FDFAC70F62DF2FB4716A33274C7FD /* Pods-MusollaTests-resources.sh */,
+				0838CD852A65730846295FA588F52E61 /* Pods-MusollaTests-umbrella.h */,
+				060A3742871AA6867321B457F2BFC25F /* Pods-MusollaTests.debug.xcconfig */,
+				FA4B43D4BEE03CEFF70B54C97449537D /* Pods-MusollaTests.release.xcconfig */,
+			);
+			name = "Pods-MusollaTests";
+			path = "Target Support Files/Pods-MusollaTests";
+			sourceTree = "<group>";
+		};
+		18C4CA69D83AF8D5B7F5D1C9816EE7D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5C3B7F7D0CF0495F2A85D169B1AB910 /* NBNRequestKit */,
+				776F331665AAEDB730B27A6F29389DB8 /* OctoKit.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C780E40EC70E1C272F2B34B2AE41659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B1CB5C1707DA0FA4622A67482212754 /* Octokit.framework */,
+				6D6A85F2AA21602C2AFABE77D9CD84EB /* Pods_Musolla.framework */,
+				C0671448753D9A2FA324C9F0E30A895B /* Pods_MusollaTests.framework */,
+				61C1CB96A8EF642AC2D766A535989400 /* Pods_MusollaUITests.framework */,
+				0022ACCB7B44B942EA859A12DA8747D4 /* RequestKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		253AF524433B93C0EB7988C18A765F68 /* Pods-Musolla */ = {
+			isa = PBXGroup;
+			children = (
+				786A623E2A3BBB16ED8C30BC60E5C648 /* Info.plist */,
+				07AE77221C1A8F7D4AF79C919A3F665F /* Pods-Musolla.modulemap */,
+				EC6E12BBCC3D6D7593EF46AF7EC14E26 /* Pods-Musolla-acknowledgements.markdown */,
+				0A9546B2131B3E2CD88219F433CC904D /* Pods-Musolla-acknowledgements.plist */,
+				1F4AA2AC031ACE8B724C4D3B48F462D7 /* Pods-Musolla-dummy.m */,
+				93A739C996E69D0C02461702636CE08A /* Pods-Musolla-frameworks.sh */,
+				7FC36BE673151012441D7E7D16907F01 /* Pods-Musolla-resources.sh */,
+				C3CFF42C5DAEE968F8B01AA121D48E59 /* Pods-Musolla-umbrella.h */,
+				65DAAED2FA2AA71A9F6CE8F36D93EA47 /* Pods-Musolla.debug.xcconfig */,
+				7FCB3C9FC6C62BC1C645C449C65183A6 /* Pods-Musolla.release.xcconfig */,
+			);
+			name = "Pods-Musolla";
+			path = "Target Support Files/Pods-Musolla";
+			sourceTree = "<group>";
+		};
+		35DFC7A89E82BDB5D8B837B855AE1B32 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D432CF00BB3F4B67839628053F049C65 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		506BC0DC300D24D27AE970934761C095 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				253AF524433B93C0EB7988C18A765F68 /* Pods-Musolla */,
+				10BCA4A69AF889F86E6000B1EFEA7FAB /* Pods-MusollaTests */,
+				5F025B257A09E09381AEEC9D81B2C8D7 /* Pods-MusollaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5F025B257A09E09381AEEC9D81B2C8D7 /* Pods-MusollaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B89F5CA0F5DFA9FC7AF6682AA7EFA6 /* Info.plist */,
+				AA28F20977E76B441D6C4A6C178C6CBB /* Pods-MusollaUITests.modulemap */,
+				F028B53FFEE2686976520F2F4220611F /* Pods-MusollaUITests-acknowledgements.markdown */,
+				455294282100D3292B060C7DEE1B99BB /* Pods-MusollaUITests-acknowledgements.plist */,
+				5B402FBFE37D950E057EEAD664BE4DBE /* Pods-MusollaUITests-dummy.m */,
+				8BFB3EDACE52A54B4EB0C46CB10CF986 /* Pods-MusollaUITests-frameworks.sh */,
+				BEDBD7B47E2AB89B47C7D06209EEC4E0 /* Pods-MusollaUITests-resources.sh */,
+				625C1CC2E9481C624251DC3F6F62EDC0 /* Pods-MusollaUITests-umbrella.h */,
+				432C601C311B731FC2341543339F996E /* Pods-MusollaUITests.debug.xcconfig */,
+				46DA5C96B70B73E8752413CA76249B50 /* Pods-MusollaUITests.release.xcconfig */,
+			);
+			name = "Pods-MusollaUITests";
+			path = "Target Support Files/Pods-MusollaUITests";
+			sourceTree = "<group>";
+		};
+		6FA2CCE0F7123A2EDA7ED9A5CA362955 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B8DA93FBF11F447C288FD1B2F0B703B /* Info.plist */,
+				D4310B570A5F22EB5C76DE4B592B5B4B /* OctoKit.swift.modulemap */,
+				96237757EE16AD55B6357DFF65D93050 /* OctoKit.swift.xcconfig */,
+				5D43E7D9302755711AEE51B12B5B86D2 /* OctoKit.swift-dummy.m */,
+				CA7FB45C33DF848DC199290CF65407D2 /* OctoKit.swift-prefix.pch */,
+				070E7200891AE1431E028794D680A0B3 /* OctoKit.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OctoKit.swift";
+			sourceTree = "<group>";
+		};
+		776F331665AAEDB730B27A6F29389DB8 /* OctoKit.swift */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB8E9279F95EA3AF05EE86592F0499 /* Configuration.swift */,
+				B60B38617A61DA5E852E3E304C757848 /* Follow.swift */,
+				C2EEC6CDBDA03767D18B73D4FBB308D0 /* Issue.swift */,
+				3AD9859C5D7859A533D79B3D68CDBA1F /* Label.swift */,
+				3520DE94C820467696F2558F681134CE /* Milestone.swift */,
+				CF80850C384FE2CDEBCF36C5E64161AB /* Octokit.swift */,
+				92762D58E9E661CF7B0388493211B295 /* PublicKey.swift */,
+				1A5171D140B732273BE5A333E47F5AB7 /* Repositories.swift */,
+				58CD52B3E38C8CB54726ABD1095749B3 /* Stars.swift */,
+				69F350471F0FFE611BC628628CD4760B /* Time.swift */,
+				423164BE5967A8E8BEBE764BDFFF301F /* URL+URLParameters.swift */,
+				627E95196AFF7CF606BAF8D85ADBA7F6 /* User.swift */,
+				6FA2CCE0F7123A2EDA7ED9A5CA362955 /* Support Files */,
+			);
+			name = OctoKit.swift;
+			path = OctoKit.swift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0EF78DC53AF38198334AEF1C3B9BF6B9 /* Frameworks */,
+				18C4CA69D83AF8D5B7F5D1C9816EE7D3 /* Pods */,
+				1C780E40EC70E1C272F2B34B2AE41659 /* Products */,
+				506BC0DC300D24D27AE970934761C095 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92B2E0D39683373A982A656DB6B2AD4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70E0E33FE9DDD811F70C5B6F01989A1D /* Info.plist */,
+				0EE26F3EE0B0A682D7938AA97D1F8314 /* NBNRequestKit.modulemap */,
+				EC8A793520E07D578D208BED7E8D67EE /* NBNRequestKit.xcconfig */,
+				E670B9CE05878514FB8B7F5281237BFD /* NBNRequestKit-dummy.m */,
+				EC85FE3F2E087D2739DAB0D42083A29F /* NBNRequestKit-prefix.pch */,
+				EB7C5556AE20A02EEB44C084548E2D53 /* NBNRequestKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NBNRequestKit";
+			sourceTree = "<group>";
+		};
+		E5C3B7F7D0CF0495F2A85D169B1AB910 /* NBNRequestKit */ = {
+			isa = PBXGroup;
+			children = (
+				D83B6662E38F08676146A6E4C2C188F9 /* JSONPostRouter.swift */,
+				92D57201ECA4AB049EB780267E010B4C /* RequestKitSession.swift */,
+				7A0D639752F87242204DF4F807218884 /* Router.swift */,
+				92B2E0D39683373A982A656DB6B2AD4B /* Support Files */,
+			);
+			name = NBNRequestKit;
+			path = NBNRequestKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F0AAEF70796C7219EB9E81C242AA7A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A71E76840EE41D2E04901440D52490 /* Pods-Musolla-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		513D16A5A2309116CA4594D8CD178735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4F51AB0C9ABFB244F54A78A27A2ABC /* OctoKit.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DCE9B12053A94D919098FD4DBB507D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038D45A6D9D641CA74D237672624416E /* Pods-MusollaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02888737840C01F797DA07C8B8C97D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47752B7DCAC7373264D6852EFFE9582 /* Pods-MusollaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD3EE569EBA803C1318F0D33A3C84D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88661DEFF64F86A1E09DE191072DFB7D /* NBNRequestKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3221A2316A03A4B097B7016CBDC067CA /* Pods-MusollaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF0F9066517568805C0C3380D4D5223 /* Build configuration list for PBXNativeTarget "Pods-MusollaUITests" */;
+			buildPhases = (
+				AF749AD518159B3E9F35E71953380E7E /* Sources */,
+				02A8D798632A4622187802DE158A8BF1 /* Frameworks */,
+				9DCE9B12053A94D919098FD4DBB507D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MusollaUITests";
+			productName = "Pods-MusollaUITests";
+			productReference = 61C1CB96A8EF642AC2D766A535989400 /* Pods_MusollaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47BD9981B01B06D52256DBABED57C9FE /* Pods-Musolla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDDA8FED36104E898ACCCA49E86BC36 /* Build configuration list for PBXNativeTarget "Pods-Musolla" */;
+			buildPhases = (
+				E2011AC7B179508760930D2971DD40B5 /* Sources */,
+				9FAAA8989F9796BB5F6C9D75E743D75B /* Frameworks */,
+				1F0AAEF70796C7219EB9E81C242AA7A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE8A98AF74EC415B1BCA59B61B98A35F /* PBXTargetDependency */,
+				FDBE634AE82979C4B0FF61E36C01D5D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Musolla";
+			productName = "Pods-Musolla";
+			productReference = 6D6A85F2AA21602C2AFABE77D9CD84EB /* Pods_Musolla.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F88FA4604C7F1CE7F27F55C436BDCBB /* OctoKit.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4846F7E6F559D1E06B4EF2FF1C3627 /* Build configuration list for PBXNativeTarget "OctoKit.swift" */;
+			buildPhases = (
+				6F4338E4547698312FBD5A5A9C64F5BC /* Sources */,
+				8FC0A994FAF163B65CA8B418C0D30C52 /* Frameworks */,
+				513D16A5A2309116CA4594D8CD178735 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6A3D32F3E43C52A72DA0C436D5BFA7 /* PBXTargetDependency */,
+			);
+			name = OctoKit.swift;
+			productName = OctoKit.swift;
+			productReference = 5B1CB5C1707DA0FA4622A67482212754 /* Octokit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97984C2BA8A5852B7F3967B084B713D5 /* NBNRequestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7435EED79BF19541DD5F05C6B36F7E21 /* Build configuration list for PBXNativeTarget "NBNRequestKit" */;
+			buildPhases = (
+				0DF61AE7D974E13C6FD618FE43677A40 /* Sources */,
+				92C20B9286809533364C1912FA3579FC /* Frameworks */,
+				EFD3EE569EBA803C1318F0D33A3C84D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBNRequestKit;
+			productName = NBNRequestKit;
+			productReference = 0022ACCB7B44B942EA859A12DA8747D4 /* RequestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B23632F1B5FE1AD89290AD0AB4C5B34 /* Pods-MusollaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7849881746C0352EEF54F43CFB2EDD /* Build configuration list for PBXNativeTarget "Pods-MusollaTests" */;
+			buildPhases = (
+				C22D7A577672F5BDB3318B5FFB3CF09B /* Sources */,
+				27D42DE1279A24E34B001A6908D0F827 /* Frameworks */,
+				D02888737840C01F797DA07C8B8C97D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MusollaTests";
+			productName = "Pods-MusollaTests";
+			productReference = C0671448753D9A2FA324C9F0E30A895B /* Pods_MusollaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1C780E40EC70E1C272F2B34B2AE41659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97984C2BA8A5852B7F3967B084B713D5 /* NBNRequestKit */,
+				4F88FA4604C7F1CE7F27F55C436BDCBB /* OctoKit.swift */,
+				47BD9981B01B06D52256DBABED57C9FE /* Pods-Musolla */,
+				9B23632F1B5FE1AD89290AD0AB4C5B34 /* Pods-MusollaTests */,
+				3221A2316A03A4B097B7016CBDC067CA /* Pods-MusollaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DF61AE7D974E13C6FD618FE43677A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B330A09D2A2E79E4891483875C853A44 /* JSONPostRouter.swift in Sources */,
+				2147371C57775F09FB12A1BDA4774FD2 /* NBNRequestKit-dummy.m in Sources */,
+				0608A07745971C0DE480414F37E6BC10 /* RequestKitSession.swift in Sources */,
+				B25A70372B28E1FCCC9281933FBAB003 /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4338E4547698312FBD5A5A9C64F5BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB93F7CA799E79A21A7F386A0C9B064 /* Configuration.swift in Sources */,
+				C133A24FFEE28574A9F8B6E55CB5E9B6 /* Follow.swift in Sources */,
+				5BD6145796A27BCF88844BC82116CD2D /* Issue.swift in Sources */,
+				463DB463EA65328A0F7E8E7B66B568E3 /* Label.swift in Sources */,
+				AEAA664ECA7441908AA3B19752C5D802 /* Milestone.swift in Sources */,
+				B00F68F7F28269C084B00F5D18B9B30F /* Octokit.swift in Sources */,
+				3BBA80844DECAD9E806F613E5ADF3A69 /* OctoKit.swift-dummy.m in Sources */,
+				70375F916331C7F066059605D71366F4 /* PublicKey.swift in Sources */,
+				6220DF5854FB9CC5C47A801D900AEC8B /* Repositories.swift in Sources */,
+				C34D42B0C0D895D0D4DC95F737C13296 /* Stars.swift in Sources */,
+				F6BDD5A23718F96790E770A959332B1D /* Time.swift in Sources */,
+				16E8089A3F5D5CA4A56BACA38FBF8877 /* URL+URLParameters.swift in Sources */,
+				BEA7393B22C920177DA4A14CDE82075E /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF749AD518159B3E9F35E71953380E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192D57CEC3C4D587FF6788BAA5DB2D91 /* Pods-MusollaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22D7A577672F5BDB3318B5FFB3CF09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C431232C345DC651B9DA8E7B98A55593 /* Pods-MusollaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2011AC7B179508760930D2971DD40B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701707CEDE198181F1DB04DABA08FD5C /* Pods-Musolla-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE8A98AF74EC415B1BCA59B61B98A35F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NBNRequestKit;
+			target = 97984C2BA8A5852B7F3967B084B713D5 /* NBNRequestKit */;
+			targetProxy = 6311E1137EF1F40A9844F13A395EE528 /* PBXContainerItemProxy */;
+		};
+		FDBE634AE82979C4B0FF61E36C01D5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OctoKit.swift;
+			target = 4F88FA4604C7F1CE7F27F55C436BDCBB /* OctoKit.swift */;
+			targetProxy = 31208CF7D1C0C36775CDDB74B9B679B2 /* PBXContainerItemProxy */;
+		};
+		FF6A3D32F3E43C52A72DA0C436D5BFA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NBNRequestKit;
+			target = 97984C2BA8A5852B7F3967B084B713D5 /* NBNRequestKit */;
+			targetProxy = CB6D276C98F6343E09BEA05BA804F08E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016A313EEB552E2A3404F5EDE4CF1066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCB3C9FC6C62BC1C645C449C65183A6 /* Pods-Musolla.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Musolla/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Musolla/Pods-Musolla.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Musolla;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1487213590C5DB308CACA90423E639E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8A793520E07D578D208BED7E8D67EE /* NBNRequestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NBNRequestKit/NBNRequestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBNRequestKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NBNRequestKit/NBNRequestKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RequestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		28A37DFADF7A5FCE740FA69946FCCEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96237757EE16AD55B6357DFF65D93050 /* OctoKit.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OctoKit.swift/OctoKit.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OctoKit.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OctoKit.swift/OctoKit.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Octokit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F2A2B76D8C4F394D74AD09A314C6AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DA5C96B70B73E8752413CA76249B50 /* Pods-MusollaUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusollaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MusollaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8764C7534450B72BB1E002493146BF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DAAED2FA2AA71A9F6CE8F36D93EA47 /* Pods-Musolla.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Musolla/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Musolla/Pods-Musolla.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Musolla;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9B5CB5A057BB6167C25E01D4C6F02FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4B43D4BEE03CEFF70B54C97449537D /* Pods-MusollaTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusollaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusollaTests/Pods-MusollaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MusollaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3FC52D6315FF262684968CA3541BBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96237757EE16AD55B6357DFF65D93050 /* OctoKit.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OctoKit.swift/OctoKit.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OctoKit.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OctoKit.swift/OctoKit.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Octokit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D66EB3533560C46FEA8AB6C4C7FABE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432C601C311B731FC2341543339F996E /* Pods-MusollaUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusollaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusollaUITests/Pods-MusollaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MusollaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDF8B2E484C8677205E315664908BC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8A793520E07D578D208BED7E8D67EE /* NBNRequestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NBNRequestKit/NBNRequestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBNRequestKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NBNRequestKit/NBNRequestKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RequestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4DCC3DF99888A4A00D343858479B9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060A3742871AA6867321B457F2BFC25F /* Pods-MusollaTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MusollaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MusollaTests/Pods-MusollaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MusollaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4846F7E6F559D1E06B4EF2FF1C3627 /* Build configuration list for PBXNativeTarget "OctoKit.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28A37DFADF7A5FCE740FA69946FCCEDD /* Debug */,
+				D3FC52D6315FF262684968CA3541BBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDDA8FED36104E898ACCCA49E86BC36 /* Build configuration list for PBXNativeTarget "Pods-Musolla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8764C7534450B72BB1E002493146BF9A /* Debug */,
+				016A313EEB552E2A3404F5EDE4CF1066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7435EED79BF19541DD5F05C6B36F7E21 /* Build configuration list for PBXNativeTarget "NBNRequestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1487213590C5DB308CACA90423E639E7 /* Debug */,
+				EDF8B2E484C8677205E315664908BC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF0F9066517568805C0C3380D4D5223 /* Build configuration list for PBXNativeTarget "Pods-MusollaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D66EB3533560C46FEA8AB6C4C7FABE4B /* Debug */,
+				3F2A2B76D8C4F394D74AD09A314C6AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7849881746C0352EEF54F43CFB2EDD /* Build configuration list for PBXNativeTarget "Pods-MusollaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DCC3DF99888A4A00D343858479B9C0 /* Debug */,
+				C9B5CB5A057BB6167C25E01D4C6F02FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

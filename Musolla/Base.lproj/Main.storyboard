@@ -34,6 +34,14 @@
                                     <segue destination="vrR-By-pbL" kind="show" identifier="toLocationSearch" id="atO-kv-XYL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asU-pZ-HcE">
+                                <rect key="frame" x="77" y="501" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="repo"/>
+                                <connections>
+                                    <action selector="repo" destination="97b-ZO-k7l" eventType="touchUpInside" id="EaR-tQ-J0h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

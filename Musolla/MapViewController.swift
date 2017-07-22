@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 
+import Octokit
+
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, LocationSelectProtocol {
 
 	@IBOutlet var mapView: MKMapView!
@@ -19,6 +21,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		print("View did load")
 
         // Do any additional setup after loading the view.
 		self.locationManager = CLLocationManager()
@@ -36,6 +40,47 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 		self.mapView.isScrollEnabled = true
     }
 
+	@IBAction func repo() {
+		let token = (UIApplication.shared.delegate as! AppDelegate).globalToken
+	
+		
+	
+		let dict: [String: Any] = [
+			"uuid": "",
+			"name": "Sheraton Towers",
+			"address": "39 Scotts Rd, Singapore 228230",
+			"location": [
+				"latitude": 1.3119539999999998,
+				"longitude": 103.836501
+			],
+			"type": "Musolla",
+			"geohash": "",
+			"mrt": "{NEAREST MRT (OPTIONAL)}",
+			"directions": "Take the lift lobby carpark down to B4. Exit the door to the carpark and go down the stairs. Prayer area is at the right corner of the carpark. There is a tap next to the area.",
+			"level": "B4",
+			"provisions": "Prayer Mat, Telekung",
+			"toiletLevel": "2",
+			"unisexCapacity": 0,
+			"maleCapacity": 2,
+			"femaleCapacity": 2,
+			"remarks": "{REMARKS IF ANY (OPTIONAL)}",
+			"submitterName": "Norhana H.",
+			"createdAt": "",
+			"updatedAt": ""
+		]
+
+		print("Dict: \((dict as? NSDictionary)!)")
+	
+//		Octokit(config).postIssue("ruqqq", repository: "musolla-database", title: "Found a bug", body: "I'm having a problem with this.", assignee: "octocat") { response in
+//			switch response {
+//			case .Success(let issue):
+//			// do something with the issue
+//			case .Failure:
+//				// handle any errors
+//			}
+//		}
+	}
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -48,7 +93,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 	
 	// MARK: CLLocationManagerDelegate delegate function
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-		print("Getting user location..")
+		//print("Getting user location..")
 
 		guard let tmpUserLocation = locations.first else {
 			return
@@ -130,7 +175,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 	}
 	
 	func reloadMap() {
-		print("Reloading map..")
+		//print("Reloading map..")
 	
 		self.mapView.selectedAnnotations.removeAll()
 		self.mapView.removeAnnotations(self.mapView.annotations)

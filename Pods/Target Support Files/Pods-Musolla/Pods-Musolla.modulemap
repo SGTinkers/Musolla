@@ -1,0 +1,6 @@
+framework module Pods_Musolla {
+  umbrella header "Pods-Musolla-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,16 +9,51 @@
 import UIKit
 import CoreData
 
+import Octokit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	var config: OAuthConfiguration?
+	var globalToken: TokenConfiguration?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		print("did finish launching")
+		
+		self.config = OAuthConfiguration.init(token: "5645e32da30ffa6d4913", secret: "807ae681d713daaf77f1572a37f3c2340357cac1", scopes: ["repo", "read:org"])
+		let url = self.config?.authenticate()
+		
+		UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+		
 		return true
 	}
+
+	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+		print("outside open url")
+	
+		self.config?.handleOpenURL(url: url, completion: { (token) in
+			print("In handle open URL")
+			
+			self.globalToken = TokenConfiguration()
+			self.globalToken?.accessToken = token.accessToken
+			
+			let _ = Octokit(self.globalToken!).me() { response in
+				switch response {
+					case .success(let user):
+						print("User login: \(user.login!)")
+					case .failure(let error):
+						print("Error: \(error)")
+				}
+			}
+		})
+		
+		return false
+	}
+	
 
 	func applicationWillResignActive(_ application: UIApplication) {
 		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
