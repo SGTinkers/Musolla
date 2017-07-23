@@ -113,7 +113,6 @@ class LocationSearchTableViewController: UITableViewController, UISearchBarDeleg
 	
 	// MARK: MKLocalSearchCompleterDelegate
 	public func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
-		print("Count: \(completer.results.count)")
 		self.filteredLocation = completer.results
 		
 		self.tableView.reloadData()

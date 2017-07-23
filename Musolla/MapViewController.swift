@@ -92,7 +92,31 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 	
 	// MARK: LocationSelectProtocol delegate function
 	func didSelect(location: MKMapItem?) {
+		self.mapView.selectedAnnotations.removeAll()
+		self.mapView.removeAnnotations(self.mapView.annotations)
 		
+		let musollaAnnotation = MusollaAnnotation.init(withCoordinate: (location?.placemark.coordinate)!, title: (location?.name)!, subtitle: nil, musolla: nil)
+		self.mapView.addAnnotation(musollaAnnotation)
+		
+		
+		let database = Database()
+		database.fetchData { (musollaArr) in
+			DispatchQueue.main.async {
+				print("Fetching data after location select")
+			
+				for musolla in musollaArr {
+					let selectedMusollaLocation = CLLocation.init(latitude: (location?.placemark.location?.coordinate.latitude)!, longitude: (location?.placemark.location?.coordinate.longitude)!)
+					let musollaLocation = CLLocation.init(latitude: (musolla.location?.latitude)!, longitude: (musolla.location?.longitude)!)
+					let distance = selectedMusollaLocation.distance(from: musollaLocation)
+					
+					if distance < 5000 { // 5km radius
+						let musollaAnnotation = MusollaAnnotation.init(withCoordinate: musolla.location!, title: musolla.name, subtitle: musolla.address, musolla: musolla)
+						
+						self.mapView.addAnnotation(musollaAnnotation)
+					}
+				}
+			}
+		}
 	}
 	
 	// MARK: CLLocationManagerDelegate delegate function
@@ -134,42 +158,20 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 		let musollaDetailsVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MusollaDetailsViewController") as? MusollaDetailsViewController
 		
 		let selectedAnnotation = self.mapView.selectedAnnotations[0] as? MusollaAnnotation
-		let musolla = selectedAnnotation?.musolla
-		musollaDetailsVC?.musolla = musolla
 		
-		self.navigationController?.pushViewController(musollaDetailsVC!, animated: true)
-		
-		
-	
-//		let directionsRequest = MKDirectionsRequest()
-//		directionsRequest.transportType = .automobile
-//		
-//		let placemark = MKPlacemark.init(coordinate: self.mapView.selectedAnnotations[0].coordinate)
-//		let selectedMusolla = MKMapItem.init(placemark: placemark)
-//		
-//		directionsRequest.source = MKMapItem.forCurrentLocation()
-//		directionsRequest.destination = selectedMusolla
-//		
-//		let directions = MKDirections.init(request: directionsRequest)
-//		directions.calculate { (directionsResponse, error) in
-//			if let route = directionsResponse?.routes[0] {
-//				
-//				self.mapView.add(route.polyline)
-//				
-//				// this is essentially how you frame what you want to see
-//				// you have 10 points padding all around
-//				self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0), animated: false)
-//				
-//				selectedMusolla.name = self.mapView.selectedAnnotations[0].title!!
-//				selectedMusolla.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeDriving: MKLaunchOptionsDirectionsModeKey])
-//			} else if let _ = error {
-//				let alert = UIAlertController(title: nil, message: "Directions not available.", preferredStyle: .alert)
-//				let okButton = UIAlertAction.init(title: "Directions not available.", style: .default, handler: nil)
-//				alert.addAction(okButton)
-//				
-//				self.present(alert, animated: true, completion: nil)
-//			}
-//		}
+		if let musolla = selectedAnnotation?.musolla {
+			musollaDetailsVC?.musolla = musolla
+			musollaDetailsVC?.sourceAnnotation = MusollaAnnotation.init(withCoordinate: userLocation!, title: "User location", subtitle: nil, musolla: nil)
+			musollaDetailsVC?.destinationAnnotation = selectedAnnotation
+			
+			self.navigationController?.pushViewController(musollaDetailsVC!, animated: true)
+		} else {
+			let alert = UIAlertController.init(title: "Hold on", message: "This is just the location you intended to search. The other pins are the musollas", preferredStyle: .alert)
+			let okAction = UIAlertAction.init(title: "Ok", style: .default, handler: nil)
+			
+			alert.addAction(okAction)
+			self.present(alert, animated: true, completion: nil)
+		}
 	}
 	
 	func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
