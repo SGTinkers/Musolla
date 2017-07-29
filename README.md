@@ -6,6 +6,9 @@ You can:
 - Contribute a musolla location through the app
 
 ### Changelog
+29 July 2017:
+- Submission to github is done(geohash and uuid is not done)
+
 22 July 2017:
 - One-time authentication implemented
 
