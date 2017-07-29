@@ -36,10 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			}
 			
 			if let item = items.first {
-				var token = TokenConfiguration()
-				token.accessToken = item.accessToken
+				self.globalToken = TokenConfiguration()
+				self.globalToken?.accessToken = item.accessToken
 				
-				let _ = Octokit(token).me() { response in
+				let _ = Octokit(self.globalToken!).me() { response in
 					switch response {
 					case .success(let user):
 						print("User login: \(user.login!)")

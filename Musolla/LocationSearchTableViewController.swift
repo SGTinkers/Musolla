@@ -107,7 +107,19 @@ class LocationSearchTableViewController: UITableViewController, UISearchBarDeleg
 	
 	// MARK: UISearchBarDelegate
 	public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-		self.localSearchCompleter?.queryFragment = searchText
+		if searchText.isEmpty {
+			self.filteredLocation?.removeAll()
+			
+			self.tableView.reloadData()
+		} else {
+			self.localSearchCompleter?.queryFragment = searchText
+		}
+	}
+	
+	public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+		self.filteredLocation?.removeAll()
+		
+		self.tableView.reloadData()
 	}
 	
 	

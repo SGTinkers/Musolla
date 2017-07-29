@@ -22,6 +22,8 @@
 		AAD293C91F19A12700E96617 /* Musolla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293C81F19A12700E96617 /* Musolla.swift */; };
 		AAD293CB1F19A18D00E96617 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD293CA1F19A18D00E96617 /* Database.swift */; };
 		AAF8AFFC1F207A6400D1E56C /* MusollaAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */; };
+		AAF9AC431F25B68700D723BC /* SubmitMusollaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9AC421F25B68700D723BC /* SubmitMusollaTableViewCell.swift */; };
+		AAF9AC461F25B83000D723BC /* SubmitMusollaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9AC451F25B83000D723BC /* SubmitMusollaViewController.swift */; };
 		B3812CA76CBFD78AD0191E0D /* Pods_Musolla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA1656D9324A9AADF01AEF9 /* Pods_Musolla.framework */; };
 		B642C7834B4D268C0CFAFCC3 /* Pods_MusollaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30ED2239EF412F305A76122 /* Pods_MusollaTests.framework */; };
 		EAD24747935C1AD12C9F45CF /* Pods_MusollaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFECA04FB8846E21BDF55B5 /* Pods_MusollaUITests.framework */; };
@@ -73,6 +75,8 @@
 		AAD293C81F19A12700E96617 /* Musolla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Musolla.swift; sourceTree = "<group>"; };
 		AAD293CA1F19A18D00E96617 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusollaAnnotation.swift; sourceTree = "<group>"; };
+		AAF9AC421F25B68700D723BC /* SubmitMusollaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMusollaTableViewCell.swift; sourceTree = "<group>"; };
+		AAF9AC451F25B83000D723BC /* SubmitMusollaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMusollaViewController.swift; sourceTree = "<group>"; };
 		AC9E266094AC9FB460B0CE8D /* Pods-MusollaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusollaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusollaTests/Pods-MusollaTests.release.xcconfig"; sourceTree = "<group>"; };
 		E30ED2239EF412F305A76122 /* Pods_MusollaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusollaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,8 +160,8 @@
 				AACB85F31F237E3F00980F61 /* view controller */,
 				AAD293C71F19A0CE00E96617 /* entity */,
 				AACB85F61F23804900980F61 /* helper */,
+				AAF9AC441F25B6A800D723BC /* custom */,
 				AA5741A21F0F74C600556A5C /* AppDelegate.swift */,
-				AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */,
 				AA5741A61F0F74C600556A5C /* Main.storyboard */,
 				AA5741AC1F0F74C600556A5C /* Assets.xcassets */,
 				AA5741AE1F0F74C600556A5C /* LaunchScreen.storyboard */,
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				AA1FA0AD1F1CA341009AA085 /* MapViewController.swift */,
+				AAF9AC451F25B83000D723BC /* SubmitMusollaViewController.swift */,
 				AA0D17131F1F0F4A007DD07B /* LocationSearchTableViewController.swift */,
 				AACB85F71F23845500980F61 /* MusollaDetailsViewController.swift */,
 			);
@@ -211,6 +216,15 @@
 				AAD293C81F19A12700E96617 /* Musolla.swift */,
 			);
 			name = entity;
+			sourceTree = "<group>";
+		};
+		AAF9AC441F25B6A800D723BC /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8AFFB1F207A6400D1E56C /* MusollaAnnotation.swift */,
+				AAF9AC421F25B68700D723BC /* SubmitMusollaTableViewCell.swift */,
+			);
+			name = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,11 +513,13 @@
 			files = (
 				AA1FA0AE1F1CA341009AA085 /* MapViewController.swift in Sources */,
 				AA5741AB1F0F74C600556A5C /* Musolla.xcdatamodeld in Sources */,
+				AAF9AC431F25B68700D723BC /* SubmitMusollaTableViewCell.swift in Sources */,
 				AAF8AFFC1F207A6400D1E56C /* MusollaAnnotation.swift in Sources */,
 				AACC5F8F1F2346FB00B933EA /* Credentials+CoreDataProperties.swift in Sources */,
 				AAD293C91F19A12700E96617 /* Musolla.swift in Sources */,
 				AACC5F8E1F2346FB00B933EA /* Credentials+CoreDataClass.swift in Sources */,
 				AAD293CB1F19A18D00E96617 /* Database.swift in Sources */,
+				AAF9AC461F25B83000D723BC /* SubmitMusollaViewController.swift in Sources */,
 				AACB85F81F23845500980F61 /* MusollaDetailsViewController.swift in Sources */,
 				AA0D17141F1F0F4A007DD07B /* LocationSearchTableViewController.swift in Sources */,
 				AA5741A31F0F74C600556A5C /* AppDelegate.swift in Sources */,

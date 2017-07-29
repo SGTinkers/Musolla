@@ -40,51 +40,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 		self.mapView.isScrollEnabled = true
     }
 
-	@IBAction func repo() {
-		let token = (UIApplication.shared.delegate as! AppDelegate).globalToken
-	
-		
-	
-		let dict: [String: Any] = [
-			"uuid": "",
-			"name": "Sheraton Towers",
-			"address": "39 Scotts Rd, Singapore 228230",
-			"location": [
-				"latitude": 1.3119539999999998,
-				"longitude": 103.836501
-			],
-			"type": "Musolla",
-			"geohash": "",
-			"mrt": "{NEAREST MRT (OPTIONAL)}",
-			"directions": "Take the lift lobby carpark down to B4. Exit the door to the carpark and go down the stairs. Prayer area is at the right corner of the carpark. There is a tap next to the area.",
-			"level": "B4",
-			"provisions": "Prayer Mat, Telekung",
-			"toiletLevel": "2",
-			"unisexCapacity": 0,
-			"maleCapacity": 2,
-			"femaleCapacity": 2,
-			"remarks": "{REMARKS IF ANY (OPTIONAL)}",
-			"submitterName": "Norhana H.",
-			"createdAt": "",
-			"updatedAt": ""
-		]
-		
-		let issueBody = "```swift\n\((dict as? NSDictionary)!)\n```"
-		print("Issue body: \(issueBody)")
-		
-		let _ = Octokit.init(token!).postIssue(URLSession.shared, owner: "ruqqq", repository: "musolla-database", title: "Testing issue function", body: issueBody, assignee: nil) { (response) in
-			switch response {
-				case .success(let issue):
-				break
-				case .failure:
-				break
-				// handle any errors
-			}
-		}
-		
-		
-	}
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
