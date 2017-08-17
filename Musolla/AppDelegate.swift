@@ -21,9 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-		
-		print("did finish launching")
-		
+
 		let request = NSFetchRequest<Credentials>.init(entityName: "Credentials")
 		do {
 			let items = try self.persistentContainer.viewContext.fetch(request)

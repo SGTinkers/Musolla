@@ -31,8 +31,6 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//		self.musollaDetailsDescription = ["Created At", "Name", "Address", "MRT", "level", "toiletLevel", "Female Capacity", "Male Capacity", "Unisex Capacity", "Directions", "Provision", "Remarks", "Submitter name"]
-		
 		self.musollaDetailsDescription = ["Name", "Address", "MRT", "level", "toiletLevel", "Female Capacity", "Male Capacity", "Unisex Capacity", "Directions", "Provision", "Remarks"]
 		
 		self.tableView.dataSource = self
@@ -54,16 +52,13 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
 	func keyboardDidShow(notification: NSNotification) {
 		let keyboardRect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
 
-		print("Cell Y origin: \(self.cellYForCurrentActiveTextfield!)")
-		print("Keyboard: \((keyboardRect?.origin.y)! - 80)")
-
-		// 150 pixels
-		// On tap of the last textfield that its Y pos is not more that the keyboard height.
-		// Scroll further up so that it's easy for user to tap on next textfield
-		// of which its Y pos is actually more than the keyboard
+		// okay, imagine the active textfield is below keyboard
 		if self.cellYForCurrentActiveTextfield! > (keyboardRect?.origin.y)! - 150 {
+			// so you take the height difference between the two
+			// if you pull up from here, the textfield is still hidden behind the keyboard
+			// but the textfield is at the top edge of the keyboard
 			let heightDifference = self.cellYForCurrentActiveTextfield! - ((keyboardRect?.origin.y)! - 150)
-			// extra 100 just to pull scrollview up a little bit to show textfield
+			// so you take the extra 100 just to pull scrollview up a little bit to show textfield
 			let pullUp = heightDifference + 100
 			
 			let contentOffset = CGPoint.init(x: 0, y: pullUp)
@@ -146,29 +141,34 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
 		
 		let date = self.getStringForDateToday()
 		print("Date: \(date)")
+		
+		// better store it instead of calling again to prevent a regeneration of uuid
+		let uuid = UUID().uuidString
 	
 		let dict: [String: Any] = [
-			"uuid": "",
-			"name": name,
-			"address": address,
-			"location": [
-				"latitude": (self.coord?.latitude)!,
-				"longitude": (self.coord?.longitude)!
-			],
-			"type": "Musolla",
-			"geohash": "",
-			"mrt": trainStation,
-			"directions": directions,
-			"level": level,
-			"provisions": provisions,
-			"toiletLevel": toiletLevel,
-			"unisexCapacity": unisexCapacity,
-			"maleCapacity": maleCapacity,
-			"femaleCapacity": femaleCapacity,
-			"remarks": remarks,
-			"submitterName": submitterName,
-			"createdAt": date,
-			"updatedAt": date
+			uuid: [
+				"address": address,
+				"createdAt": date,
+				"location": [
+					"latitude": (self.coord?.latitude)!,
+					"longitude": (self.coord?.longitude)!
+				],
+				"name": name,
+				"type": "Musolla",
+				"updatedAt": date,
+				"uuid": uuid,
+				"geohash": "",
+				"mrt": trainStation,
+				"directions": directions,
+				"level": level,
+				"provisions": provisions,
+				"toiletLevel": toiletLevel,
+				"unisexCapacity": unisexCapacity,
+				"maleCapacity": maleCapacity,
+				"femaleCapacity": femaleCapacity,
+				"remarks": remarks,
+				"submitterName": submitterName,
+			]
 		]
 
 		let issueBody = "```swift\n\((dict as? NSDictionary)!)\n```"
@@ -279,7 +279,9 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SubmitMusollaTableViewCell
 		
 		cell?.label.text = self.musollaDetailsDescription?[indexPath.row]
-		cell?.tag = indexPath.row
+		
+		cell?.selectionStyle = .none
+		cell?.textfield.delegate = self
 		
 		if indexPath.row == 0 { // name
 			cell?.textfield.isUserInteractionEnabled = false
@@ -288,9 +290,6 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
 		if indexPath.row == 1 { // address
 			cell?.textfield.isUserInteractionEnabled = false
 		}
-		
-		cell?.selectionStyle = .none
-		cell?.textfield.delegate = self
 		
 		if indexPath.row >= 3 && indexPath.row <= 7 { // level to unisex capacity
 			let toolbar = UIToolbar.init(frame: CGRect.init(x: 0, y: 0, width: 320, height: 44))
@@ -325,8 +324,6 @@ class SubmitMusollaViewController: UIViewController, UITableViewDataSource, UITa
 
 	// MARK: UITextfieldDelegate functions
 	public func textFieldDidBeginEditing(_ textField: UITextField) {
-		print("textFieldDidBeginEditing")
-		
 		// if you look at main.storyboard
 		// textfield is in a content view, and that content view is in a cell
 		// so this is actually the cell's y origin

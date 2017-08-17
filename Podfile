@@ -6,7 +6,7 @@ target 'Musolla' do
   use_frameworks!
 
   # Pods for Musolla
-  pod 'OctoKit.swift', '~> 0.7'
+  pod 'OctoKit.swift', '~> 0.7'  
 
   target 'MusollaTests' do
     inherit! :search_paths

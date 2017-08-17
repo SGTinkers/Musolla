@@ -60,6 +60,7 @@ class MusollaDetailsViewController: UIViewController, UITableViewDataSource, UIT
 		
 		let directions = MKDirections.init(request: directionsRequest)
 		directions.calculate { (directionsResponse, error) in
+			// choose the first route
 			if let route = directionsResponse?.routes[0] {
 				self.mapView.add(route.polyline)
 				
