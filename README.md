@@ -3,7 +3,7 @@
 You can:
 - Find a musolla near you
 - Get directions to the musolla
-- Contribute a musolla location through the app
+- Contribute a musolla location through the app (Contribution is submitted to this Github [account](https://github.com/ruqqq/musolla-database) as an issue)
 
 ### Changelog
 29 July 2017:
